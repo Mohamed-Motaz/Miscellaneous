@@ -7,7 +7,11 @@ To pprof into the cpu profile:
 To view the flamegraph and more for the cpu profile:
 - go tool pprof -http ":8000" prof.cpu
 
-To do so for memory, just replace ".cpu" with ".mem"
+To pprof into the mem profile (num of objects):
+- go tool pprof -alloc_objects profiling_strings_concatenation.test prof.mem
+
+To pprof into the mem profile (size of objects):
+- go tool pprof -alloc_space profiling_strings_concatenation.test prof.mem
 
 Benchmark results:
 
