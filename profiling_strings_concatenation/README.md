@@ -2,7 +2,7 @@ To benchmark and create profiles, run:
 - go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem        
 
 To pprof into the cpu profile:
--  go tool pprof prof.cpu 
+-  go tool pprof profiling_strings_concatenation.test prof.cpu 
 
 To view the flamegraph and more for the cpu profile:
 - go tool pprof -http ":8000" prof.cpu
