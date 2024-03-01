@@ -1,5 +1,5 @@
 To benchmark and create profiles, run:
-- go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem        
+- go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem -blockprofile prof.block       
 
 To pprof into the cpu profile:
 -  go tool pprof profiling_strings_concatenation.test prof.cpu 
@@ -15,7 +15,7 @@ To pprof into the mem profile (size of objects):
 
 Benchmark results:
 
-go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem
+go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem -blockprofile prof.block
 
 goos: darwin
 goarch: arm64
