@@ -17,6 +17,7 @@ Benchmark results:
 
 go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem -blockprofile prof.block
 
+```
 goos: darwin
 goarch: arm64
 pkg: profiling_strings_concatenation
@@ -26,3 +27,4 @@ BenchmarkConcatStringsBytesBuffer-10                      144388              79
 BenchmarkConcatStringsBytesBufferImproved-10              245060              5199 ns/op           10752 B/op          2 allocs/op
 PASS
 ok      profiling_strings_concatenation 5.263s
+```
